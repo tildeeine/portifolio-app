@@ -8,6 +8,7 @@ export const HomePage = () => {
         <p className="text-[#FFD153]">Hei, jeg heter</p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#E9B116]">
           Tilde Eriksen Eine
+          
         </h1>
         <h2 className="text-3xl sm:text-6xl font-bold text-[#FFD153]">
           Jeg er IT-student.
