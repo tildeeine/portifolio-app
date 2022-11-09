@@ -8,30 +8,30 @@ export const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#edede9] text-gray-700">
-      <div>
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#344526] text-[#E9B116]">
+      {/* { <div>
         <img src={logo} alt="Logo" style={{ width: "50px" }} />
-      </div>
+      </div> } */}
 
       <ul className="hidden md:flex ">
         <li>
           <Link to="home" smooth={true} duration={500}>
-            Home
+            Hjem
           </Link>
         </li>
         <li>
           <Link to="about" smooth={true} duration={500}>
-            About
+            Om meg
           </Link>
         </li>
         <li>
           <Link to="skills" smooth={true} duration={500}>
-            Skills
+            Ferdigheter
           </Link>
         </li>
         <li>
           <Link to="projects" smooth={true} duration={500}>
-            Projects
+            Prosjekter
           </Link>
         </li>
       </ul>
@@ -44,22 +44,22 @@ export const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#22333b] flex flex-col justify-center items-center text-white"
+            : "absolute top-0 left-0 w-full h-screen bg-[#22333b] flex flex-col justify-center items-center text-[white]"
         }
       >
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-            Home
+            Hjem
           </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-            About
+            Om meg
           </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-            Skills
+            Ferdigheter
           </Link>
         </li>
         <li className="py-6 text-4xl">
@@ -69,7 +69,7 @@ export const Navbar = () => {
             smooth={true}
             duration={500}
           >
-            Projects
+            Prosjekter
           </Link>
         </li>
       </ul>
